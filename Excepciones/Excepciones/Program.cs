@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using ClaseAbstracta;
 
 namespace Excepciones
 {
@@ -20,8 +21,16 @@ namespace Excepciones
                 Impresion = new clsImpresion();
             else
                 Impresion = new clsArchivos();
-            Impresion.imprimirCliente(cliente);
-
+            //Impresion.imprimirCliente(cliente);
+            try
+            {
+                Impresion.imprimirCliente(cliente);
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine("ocurrió un error" + e.Message);
+                Console.ReadKey();
+            }
 
             //impresion = new clsImpresion();
             //impresion.imprimirCliente(cliente);
