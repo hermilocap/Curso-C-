@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ClaseAbstracta
 {
-    class clsClientesDireccion
+  public  class clsClientesDireccion
     {
         public clsClientesDireccion()
         {
