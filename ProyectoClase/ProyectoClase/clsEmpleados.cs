@@ -16,9 +16,23 @@ namespace ProyectoClase
             Edad = 0;
         }
 
-        public string Nombre;
+        string _Nombre;
         public decimal SueldoDiario;
         public int Edad;
+
+        public string Nombre
+        {
+            get
+            {
+                return _Nombre;
+            }
+
+            set
+            {
+                _Nombre = value;
+            }
+        }
+
         public decimal CalculaSalario(int numeroDias) {
             return SueldoDiario * numeroDias;
         }
