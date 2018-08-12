@@ -11,12 +11,16 @@ namespace ClaseAbstracta
         static void Main(string[] args)
         {
             //clase abstracta no se puede instanciar
-            clsClientesBase cliente = new clsClientesBase(0,"hermilo","001","sabh",1,"hermilo santiago");
-            Console.WriteLine(cliente.Clave+" "+cliente.Nombre);
-            Console.WriteLine(cliente.TipoRegimen);
-            Console.WriteLine(cliente.RFC);
+            clsClientesBase cliente = new clsClienteContactos(0,"hermilo","001","sabh",1,"hermilo santiago","222","55666","hermilocap@gmail.com","apatzingan","3","3","lazaro cardenas","cuernavaca","Mexico","620");
+
+            //polimorfismo: permite tranferir de la jerarquia de una clase
+            clsImpresion impresion;
+            impresion = new clsImpresion();
+            impresion.imprimirCliente(cliente);
+            //interfaz: definir un comportamiento común
+
+
            
-            Console.ReadKey();
         }
     }
 }
