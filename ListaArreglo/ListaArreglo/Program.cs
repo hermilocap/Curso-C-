@@ -10,9 +10,17 @@ namespace ListaArreglo
     {
         static void Main(string[] args)
         {
-            clsMostrarArrayList mostrar = new clsMostrarArrayList();
-            mostrar.CapturarDatos();
-            mostrar.ImprimirDatos();
+            //clsMostrarArrayList mostrar = new clsMostrarArrayList();
+            //mostrar.CapturarDatos();
+            //mostrar.ImprimirDatos();
+
+            clsMuestraHashMap muestramap;
+            muestramap = new clsMuestraHashMap();
+            muestramap.AgregarDatos();
+            muestramap.Imprimir();
+
+            muestramap.EliminarElementos("0001");
+            muestramap.Imprimir();
 
         }
     }
