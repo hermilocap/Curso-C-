@@ -12,7 +12,7 @@ namespace ClaseAbstracta
         public void imprimirCliente(clsAbsCliente cliente) {
             try
             {
-                StreamWriter ar = new StreamWriter(@"C:\Users\hermilocap\Desktop\archivo.log", true);
+                StreamWriter ar = new StreamWriter(@"C:\archivo.log", true);
 
                 ar.WriteLine(cliente.Clave + " " + cliente.Nombre);
                 ar.Close();
